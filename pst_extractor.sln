@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pst_extractor", "pst_extractor\pst_extractor.csproj", "{3FBAB1BF-65FB-42E0-A35F-55B8D54BC291}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FBAB1BF-65FB-42E0-A35F-55B8D54BC291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBAB1BF-65FB-42E0-A35F-55B8D54BC291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBAB1BF-65FB-42E0-A35F-55B8D54BC291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBAB1BF-65FB-42E0-A35F-55B8D54BC291}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
