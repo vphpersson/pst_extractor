@@ -23,6 +23,7 @@ namespace pst_extractor {
     }
     
     public struct MessageInfo {
+        public string folder_name;
         public string sender_address;
         public DateTime created_date;
         public DateTime received_date;
@@ -34,6 +35,7 @@ namespace pst_extractor {
         public List<string> links;
         
         public MessageInfo(
+            string folder_name,
             string sender_address,
             DateTime created_date,
             DateTime received_date,
@@ -41,8 +43,9 @@ namespace pst_extractor {
             IEnumerable<string> links,
             IEnumerable<AttachmentInfo> attachment_info_list
         ) {
+            this.folder_name = folder_name;
             this.sender_address = sender_address;
-
+            
             this.created_date = created_date;
             this.received_date = received_date;
             
@@ -98,6 +101,7 @@ namespace pst_extractor {
 
                         email_findings.Add(
                             new MessageInfo(
+                                folder_name: current_folder.DisplayName,
                                 sender_address: message.SenderAddress,
                                 created_date: message.CreationTime,
                                 received_date: message.MessageDeliveryTime,
